@@ -11,3 +11,13 @@ h1 {
   font-size: 64px;
   font-weight: 600;
 }
+
+#main {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 16px;
+  color: #6e6e73;
+}
