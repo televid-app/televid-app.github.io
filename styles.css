@@ -76,12 +76,18 @@ h1 {
   position: relative;
 }
 
+.nav-links li {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
 .dropdown {
   position: absolute;
-  top: 44px;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(30px);
   border-radius: 16px;
   padding: 16px 24px;
@@ -91,23 +97,14 @@ h1 {
   min-width: 200px;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.25s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-.dropdown a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #1d1d1f;
-  transition: opacity 0.2s ease;
-}
-
-.dropdown a:hover {
-  opacity: 0.6;
+  transition-delay: 0.1s;
 }
 
 .has-dropdown:hover .dropdown {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   pointer-events: auto;
+  transition-delay: 0s;
 }
