@@ -128,6 +128,17 @@ h1 {
   opacity: 0.7;
 }
 
+.logo img {
+  height: 20px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.logo a:hover img {
+  opacity: 0.75;
+}
+
 /* Links Underline */
 
 .nav-links a {
