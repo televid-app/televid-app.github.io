@@ -161,3 +161,133 @@ h1 {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+/*  */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 52px;
+  height: 28px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #e5e5ea;
+  border-radius: 100px;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun-icon, .moon-icon {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun-icon {
+  opacity: 1;
+  transform: scale(1);
+  color: #ff9500;
+}
+
+.moon-icon {
+  opacity: 0;
+  transform: scale(0.5);
+  color: #5856d6;
+}
+
+.theme-toggle:hover .toggle-track {
+  filter: brightness(0.97);
+}
+
+.theme-toggle:active .toggle-thumb {
+  transform: scale(0.95);
+}
+
+body.dark {
+  background: #000000;
+}
+
+body.dark .navbar {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(55, 124, 146, 0.3);
+}
+
+body.dark .navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+body.dark .nav-links a {
+  color: rgba(55, 124, 146, 0.95);
+}
+
+body.dark .nav-links a::after {
+  background: rgba(55, 124, 146, 0.9);
+}
+
+body.dark .dropdown {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(30px);
+}
+
+body.dark .dropdown a {
+  color: rgba(55, 124, 146, 0.9);
+}
+
+body.dark .subtitle {
+  color: #8e8e93;
+}
+
+body.dark .toggle-track {
+  background: #3a3a3c;
+}
+
+body.dark .moon-icon {
+  color: #5856d6;
+}
+
+body.dark,
+body.dark #main,
+body.dark h1,
+body.dark .store-left span {
+  color: #ffffff;
+}
+
+body.dark .store-photo {
+  background-color: #1c1c1e;
+  color: #ffffff;
+}
+
+body.dark .store-photo .placeholder-text {
+  color: #ffffff;
+}
+
+body.dark .store-left {
+  color: #ffffff;
+}
+
+body.dark .logo a img {
+  filter: brightness(0.9);
+}
