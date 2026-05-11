@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+  color: rgba(55, 124, 146, 0.95);
   font-size: 64px;
   font-weight: 600;
 }
@@ -270,4 +271,8 @@ body.dark .moon-icon {
 
 body.dark .logo a img {
   filter: brightness(0.9);
+}
+
+body.dark h1 {
+  color: rgba(55, 124, 146, 0.95);
 }
