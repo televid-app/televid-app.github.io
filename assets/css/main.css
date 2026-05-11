@@ -268,26 +268,6 @@ body.dark .moon-icon {
   color: #5856d6;
 }
 
-body.dark,
-body.dark #main,
-body.dark h1,
-body.dark .store-left span {
-  color: #ffffff;
-}
-
-body.dark .store-photo {
-  background-color: #1c1c1e;
-  color: #ffffff;
-}
-
-body.dark .store-photo .placeholder-text {
-  color: #ffffff;
-}
-
-body.dark .store-left {
-  color: #ffffff;
-}
-
 body.dark .logo a img {
   filter: brightness(0.9);
 }
