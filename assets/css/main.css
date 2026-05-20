@@ -372,30 +372,6 @@ body.dark h1 {
     z-index: 2;
 }
 
-.trust-badge {
-    margin-top: 48px;
-    text-align: center;
-}
-
-.trust-text {
-    font-size: 14px;
-    color: #6e6e73;
-    margin-bottom: 12px;
-}
-
-.platform-icons {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    font-size: 13px;
-    color: #377C92;
-    font-weight: 500;
-}
-
-body.dark .trust-text {
-    color: #8e8e93;
-}
-
 body.dark .amazon-btn {
     background: linear-gradient(135deg, #FF9900 0%, #e68a00 45%, #cc7a00 100%);
     box-shadow: 0 12px 30px rgba(255, 153, 0, 0.3);
