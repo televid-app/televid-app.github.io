@@ -374,10 +374,10 @@ body.dark h1 {
 
 body.dark .amazon-btn {
     background: linear-gradient(135deg, #FF9900 0%, #e68a00 45%, #cc7a00 100%);
-    box-shadow: 0 12px 30px rgba(255, 153, 0, 0.3);
+    box-shadow: none;
 }
 
 body.dark .direct-btn {
     background: linear-gradient(135deg, #4A9AB5 0%, #377C92 45%, #2a6275 100%);
-    box-shadow: 0 12px 30px rgba(74, 154, 181, 0.3);
+    box-shadow: none;
 }
