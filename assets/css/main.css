@@ -416,3 +416,133 @@ body.dark .direct-btn {
     background: linear-gradient(135deg, #4A9AB5 0%, #377C92 45%, #2a6275 100%);
     box-shadow: none;
 }
+
+/* OPERA LAYOUT */
+.download-shell {
+    width: 100%;
+    max-width: 1120px;
+
+    margin-top: 56px;
+
+    background: #f5f6fa;
+
+    border-radius: 36px;
+
+    padding: 38px;
+
+    box-sizing: border-box;
+}
+
+.download-shell-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 26px;
+}
+
+.download-shell-header img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.download-shell-header span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+.download-card {
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ROWS */
+
+.download-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 132px;
+
+    padding: 0 32px;
+
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.download-row:last-child {
+    border-bottom: none;
+}
+
+/* LEFT */
+
+.download-left {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.download-platform-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+}
+
+.download-platform-text {
+    display: flex;
+    align-items: baseline;
+
+    gap: 6px;
+
+    font-size: 20px;
+}
+
+.primary-text {
+    font-weight: 700;
+    color: #111;
+}
+
+.secondary-text {
+    font-weight: 500;
+    color: #5a35ff;
+}
+
+/* spacing exactly like opera */
+
+.download-row .download-btn {
+    margin-left: 20px;
+}
+
+/* DARK MODE */
+
+body.dark .download-shell {
+    background: #111214;
+}
+
+body.dark .download-card {
+    background: #18191c;
+    border-color: rgba(255,255,255,0.05);
+}
+
+body.dark .download-row {
+    border-bottom-color: rgba(255,255,255,0.06);
+}
+
+body.dark .primary-text,
+body.dark .download-platform-icon,
+body.dark .download-shell-header span {
+    color: white;
+}
