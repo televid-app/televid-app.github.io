@@ -419,8 +419,8 @@ body.dark .direct-btn {
 
 /* OPERA LAYOUT */
 .download-shell {
-    width: calc(100vw - 186px);
-    max-width: 1180px;
+    width: calc(100vw - 240px);
+    max-width: 1040px;
     min-width: 0;
 
     margin-top: 56px;
