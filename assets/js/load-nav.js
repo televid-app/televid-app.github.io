@@ -7,13 +7,8 @@ fetch("/assets/pages/nav.html")
     .catch(err => console.error("Navbar load error:", err));
 
 function createThemeToggle() {
-    const logo = document.querySelector(".logo");
-    if (!logo) return;
-    
-    const wrapper = document.createElement("div");
-    wrapper.style.display = "flex";
-    wrapper.style.alignItems = "center";
-    wrapper.style.gap = "20px";
+    const navLinks = document.querySelector(".nav-links");
+    if (!navLinks) return;
     
     const button = document.createElement("button");
     button.className = "theme-toggle";
@@ -40,9 +35,10 @@ function createThemeToggle() {
         </div>
     `;
     
-    logo.parentNode.insertBefore(wrapper, logo);
-    wrapper.appendChild(logo);
-    wrapper.appendChild(button);
+    const item = document.createElement("li");
+    item.appendChild(button);
+
+    navLinks.insertBefore(item, navLinks.firstChild);
     
     initDarkMode();
 }
