@@ -361,7 +361,7 @@ body.dark h1 {
     transition: width 0.75s cubic-bezier(0.22, 1, 0.36, 1);
     pointer-events: none;
     border-radius: 34px;
-    filter: blur(6px);
+    filter: blur(20px);
 }
 
 .download-btn:hover::after {
