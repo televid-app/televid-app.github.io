@@ -37,8 +37,7 @@ function createThemeToggle() {
     
     const item = document.createElement("li");
     item.appendChild(button);
-
-    navLinks.insertBefore(item, navLinks.firstChild);
+    navLinks.appendChild(item);
     
     initDarkMode();
 }
